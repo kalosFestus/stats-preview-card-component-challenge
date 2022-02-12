@@ -1,0 +1,136 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.flex-one {
+    background-color: hsl(244, 38%, 16%);
+    width: 40%;
+    border-top-left-radius: 1.5%;
+    border-bottom-left-radius: 1.5%;
+}
+
+.flex-one h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.text-span {
+    color: hsl(277, 64%, 61%);
+}
+
+.main {
+    padding-left: 14%;
+    padding-top: 10%;
+}
+
+.flex-one p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footer-container {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 15%; */
+    padding: 7% 0;
+
+    justify-content: space-evenly;
+}
+
+.footer-container h6 {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.footer-one h6,
+.footer-two h6,
+.footer-three h6 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.flex-two {
+    background: url("./images/image-header-desktop.jpg"), no-repeat;
+    width: 40%;
+    position: relative;
+    border-top-right-radius: 1.5%;
+    border-bottom-right-radius: 1.5%;
+}
+
+.color-overlay {
+    position: absolute;
+    background-color: hsl(277, 100%, 50%);
+    position: absolute;
+    opacity: .28;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Mobile @375px width*/
+@media (max-width: 375px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .flex-one,
+    .flex-two {
+        width: 90%;
+    }
+
+    .flex-one {
+        border-bottom-right-radius: 1.5%;
+    }
+
+    .flex-one p {
+        font-size: 15px;
+    }
+
+    .flex-one h1 {
+        font-size: 2rem;
+    }
+
+    .flex-two {
+        height: 55vh;
+        background-image: url("./images/image-header-mobile.jpg"), no-repeat;
+        border-top-left-radius: 1.5%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main {
+        text-align: center;
+        padding-left: 3%;
+    }
+
+    .footer-two,
+    .footer-three {
+        padding-top: 5%;
+    }
+
+}
